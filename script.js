@@ -63,6 +63,9 @@ function createFirework() {
     }
 }
 
-window.onload = createFirework;
+let ww = window.onload = createFirework
 
+setInterval(() => {
+    createFirework()
+}, 100000);
 
